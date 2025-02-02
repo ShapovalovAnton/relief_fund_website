@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ShapovalovAnton/relief_fund_website/static/css/main.30f5fffc.css",
+    "main.js": "/ShapovalovAnton/relief_fund_website/static/js/main.fe3d7d89.js",
+    "static/media/first_screen.svg": "/ShapovalovAnton/relief_fund_website/static/media/first_screen.55716e5eb0874dcf3998.svg",
+    "index.html": "/ShapovalovAnton/relief_fund_website/index.html",
+    "main.30f5fffc.css.map": "/ShapovalovAnton/relief_fund_website/static/css/main.30f5fffc.css.map",
+    "main.fe3d7d89.js.map": "/ShapovalovAnton/relief_fund_website/static/js/main.fe3d7d89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30f5fffc.css",
+    "static/js/main.fe3d7d89.js"
+  ]
+}
