@@ -1,0 +1,23 @@
+
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    /* Кольори */
+    --color-light-blue: #F1FDFF;
+    --color-sky-blue: #7AE5FD;
+    --color-dark-blue: #00d0ff;
+    --color-light-yellow: #F9FADF ;
+    /* Шрифти */
+    --font-family-text: "Montserrat";
+    --font-size-h1: 64px;
+    --font-size-h2: 48px;
+    --font-size-text: 32px;
+}
+body {
+    font-family: var(--font-family-text);
+    font-size: 1em;
+    margin-top: 6.2em;
+}
+

@@ -1,0 +1,127 @@
+.header{
+    /* padding: 1.2em 3.94em; */
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+}
+
+.logo{
+    width: 4em;
+    padding-left: 3.94rem;
+}
+
+.header_nav{
+    padding-right: 3.94rem;
+    gap: 3.5em;
+}
+
+.header_button{
+    margin-left: -1.8em;
+}
+
+.menu_burger{
+    visibility: hidden;
+    display: none;
+    height: 0px;
+    
+}
+.menu_item_box{
+    visibility: hidden;
+    height: 0px;
+}
+.menu_btn{
+    width:40vw;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu_btn > span, 
+.menu_btn > span::before, 
+.menu_btn > span::after{
+display: block;
+width: 30vw;
+height: 3px;
+background-color: var(--color-dark-blue);
+position: absolute;
+
+}
+
+.menu_btn > span::before{
+content: "";
+top: -0.5em;
+}
+
+.menu_btn > span::after{
+    content: "";
+    top: 0.5em;
+    }
+
+#menu_toggle{
+    opacity:0;
+    
+}
+
+.menu_item_box {
+    visibility: hidden;
+    height: 0;
+    display: none;
+    gap: 0;
+    top: 0;
+    font-size: 0;
+    align-items: flex-start;
+    
+}
+
+.menu_item_box.active {
+    visibility: visible;
+    height: auto;
+    position: fixed;
+    font-size: 1.25em;
+    transition: all 0.3s ease; 
+    background-color: white;
+    border-top:0.1em solid var(--color-dark-blue);
+    border-bottom:0.1em solid var(--color-dark-blue);
+    top:auto;
+    z-index: 2;
+    
+}
+
+.menu_item_box a{
+    border-top:0.1em solid var(--color-dark-blue);
+    border-bottom:0.1em solid var(--color-dark-blue);
+    width: 100vw;
+    height: 1.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_item_box a:hover{
+    background-color: var(--color-dark-blue);
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (max-width:920px){
+    header .header_nav {
+        display: none;
+    }
+
+    header .menu_item_box{
+        display: flex;
+    }
+
+    header .menu_burger {
+        display: flex;
+        visibility: visible;
+        height: auto;
+        position: relative;
+        top:2vh;
+    }
+}
+
