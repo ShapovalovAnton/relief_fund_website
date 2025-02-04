@@ -1,9 +1,16 @@
 [
     {
-      "array": ["Контакти", "Головна", "З чим ми працюємо", "Підтримати фонд"]
+      "array": ["/img/TelegramLogo.svg", "/img/WhatsappLogo.svg"]
     },
     
     {
-      "array": ["#contacts", "#main", "#about_us", "#help_us"]
+      "array": ["https://web.telegram.org/",
+       "https://www.whatsapp.com/?lang=uk_UA"]
+    },
+
+    {
+      "array": ["Telegram", "WhatsApp"]
     }
   ]
+
+  

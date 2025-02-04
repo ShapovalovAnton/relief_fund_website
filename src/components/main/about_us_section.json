@@ -2,27 +2,49 @@
      {
         "title": "Реабілітаційний центр",
         "text":  "Ми допомагаємо людям, які постраждали, знайти правильне лікування. У нашому фонді є чотири напрями: фізичної та реабілітаційної медицини, терапевтичне, неврологічне та хірургічне. Ми маємо заклади-партнери, де швидко та якісно можуть надати допомогу.",
-        "image": "img/about_us_center.svg"
+        "image": [
+         "img/about_us_center_1.svg",
+         "img/about_us_center_2.svg",
+         "img/about_us_center_3.svg"
+
+        ]
      },
 
      {
         "title": "Робота з дітьми",
         "text":  "Діти – найвразливіша частина суспільства, і їм особливо потрібна підтримка дорослих. Тому наш фонд збирає речі для дітей, проводить літні й зимові табори, майстер-класи та за потреби – дитячих психотерапевтів.",
-        "image": "img/about_us_children.svg"
+        "image": [
+         "img/about_us_children_1.svg",
+         "img/about_us_children_2.svg",
+         "img/about_us_children_3.svg",
+         "img/about_us_children_4.svg"
+
+        ]
      },
      {
         "title": "Гуманітарна допомога",
         "text":  "Ми забезпечуємо постраждалих найнеобхіднішим: їжею, одягом, ліками та засобами гігієни. Завдяки нашим партнерам та волонтерам підтримка швидко доходить до тих, хто її потребує.",
-        "image": "img/about_us_humanitarian.svg"
+        "image": ["img/about_us_humanitarian_1.svg",
+      "img/about_us_humanitarian_2.svg",
+      "img/about_us_humanitarian_3.svg",
+      "img/about_us_humanitarian_4.svg",
+      "img/about_us_humanitarian_5.svg"
+      
+      
+      ]
      },
      {
         "title": "Допомога пораненим",
         "text":  "Фонд сприяє лікуванню та реабілітації поранених. Ми співпрацюємо з медичними закладами, щоб люди отримали якісну допомогу, а також підтримуємо тих, хто потребує тривалої реабілітації.",
-        "image": "img/about_us_wounded.svg"
+        "image": ["img/about_us_wounded_1.svg",
+      "img/about_us_wounded_2.svg"]
      },
      {
         "title": "Освітні програми",
         "text":  "Ми створюємо умови для навчання дітей, які залишилися без доступу до освіти. Проводимо заняття онлайн і офлайн, щоб діти мали змогу продовжувати навчання та адаптуватися до нових умов.",
-        "image": "img/about_us_education.svg"
+        "image": ["img/about_us_education_1.svg",
+        "img/about_us_education_2.svg",
+        "img/about_us_education_3.svg"
+      ]
      }
 ]

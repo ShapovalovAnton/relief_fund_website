@@ -1,4 +1,4 @@
-
+/* Файл для шрифтів та кольорів */
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -11,9 +11,6 @@
     --color-light-yellow: #F9FADF ;
     /* Шрифти */
     --font-family-text: "Montserrat";
-    --font-size-h1: 64px;
-    --font-size-h2: 48px;
-    --font-size-text: 32px;
 }
 body {
     font-family: var(--font-family-text);

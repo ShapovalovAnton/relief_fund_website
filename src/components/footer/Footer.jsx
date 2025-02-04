@@ -1,6 +1,18 @@
 import './footer.css'
+import footer from "./footer.json";
+function parseFooter(i){
+    return footer[i].array;
+}
 export function Footer() {
-    const handleSubmit = (event) => {
+    // Іконки соц-мереж з відповідними URL та описом alt зберіг у JSON-файлі
+    let icon, link, name;
+    icon = parseFooter(0);
+    link = parseFooter(1);
+    name = parseFooter(2);
+    
+    // Оскільки серверу немає, а форма для заповнення є, 
+    // то просто виводжу повідомлення
+    const Submit = (event) => {
         event.preventDefault(); 
         let nameField = event.target.elements.name.value.trim();
         let emailField = event.target.elements.email.value.trim();
@@ -22,8 +34,11 @@ export function Footer() {
                     <span className="bold">0-987-654-321</span>
                 </p>
                 <div className="contact_icons_in_row_div contact_size flex">
-                    <img className="contact_icon" src="/img/TelegramLogo.svg" alt="Telegram" />
-                    <img className="contact_icon" src="/img/WhatsappLogo.svg" alt="Whatsapp" />
+                {icon.map((text, index) => (
+                    <a className="contact_a" href={link[index]} key={index}>
+                    <img className="contact_icon" src={text} alt={name[index]}/>
+                    </a>
+                ))} 
                 </div>
                 <p className="contact_size">Або пишіть нам у чат-бот</p>
             </div>
@@ -32,7 +47,7 @@ export function Footer() {
             <aside className="footer_email_aside">
                 <img className="footer_email_img" src="img/email.svg" alt="Email" />
             </aside>
-            <form className="flex flex_column footer_form" onSubmit={handleSubmit}>
+            <form className="flex flex_column footer_form" onSubmit={Submit}>
                 <p className="footer_form_p">
                     Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку
                 </p>

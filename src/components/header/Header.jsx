@@ -5,10 +5,12 @@ function parseHeader(i){
     return header[i].array;
 }
 export function Header() {
+    // Меню зберіг у JSON-файлі: лого, назва секції, відповне Id для переходу
     let logo, section_title, points;
     logo = parseHeader(0);
     section_title = parseHeader(1);
     points = parseHeader(2);
+    // Для бургер-меню
     useEffect(() => {
         let menuToggle = document.getElementById('menu_toggle');
         let menuBox = document.querySelector('.menu_item_box');

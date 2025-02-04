@@ -1,3 +1,4 @@
+/* Стилі для підвалу */
 .footer{
 background-color: var(--color-light-yellow);
 width: 90%;
@@ -25,6 +26,9 @@ width: 100%;
     width: 2em;
 }
 
+.contact_a:hover{
+cursor: pointer;
+}
 .contact_p{
     max-width: 16.8em;
     margin-top: 1.5vh;
@@ -90,6 +94,9 @@ flex-shrink: 1;
     padding-bottom: 0.75em;
     text-transform: uppercase;
 }
+/* Елементи, що не вміщуються горизонтально, йдуть вниз, 
+зображення з поштовим листом не несе інформативного сенсу, 
+а отже зникає */
 
 @media (max-width:920px){
     .footer_contacts{
@@ -107,7 +114,8 @@ flex-shrink: 1;
     }
 
 }
-
+/* Заголовок, розмір якого вказано в абсолютних одиницях, 
+більше не вміщується в ширину екрана, змінюю одиниці на відносні */
 @media (max-width:570px){
 
     div .contact_h2{

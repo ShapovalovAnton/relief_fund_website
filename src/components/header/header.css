@@ -1,5 +1,5 @@
+/* Стилі для шапки сайту */
 .header{
-    /* padding: 1.2em 3.94em; */
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     position: fixed;
@@ -23,6 +23,7 @@
     margin-left: -1.8em;
 }
 
+/* Стилі для меню-бургер з використанням  прихованого toggle*/
 .menu_burger{
     visibility: hidden;
     display: none;
@@ -106,7 +107,7 @@ top: -0.5em;
     cursor: pointer;
     transition: 0.3s;
 }
-
+/* Звичайне меню не вміщується, замість нього робимо менб-бургер */
 @media (max-width:920px){
     header .header_nav {
         display: none;

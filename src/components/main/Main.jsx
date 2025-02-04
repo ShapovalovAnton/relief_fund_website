@@ -1,9 +1,38 @@
 
 import './main.css'
 import aboutUsSection from "./about_us_section.json";
-
+import React, { useState, useEffect } from "react";
 export function Main() {
+    // Вирішив, що статті буде зручно зберігати у JSON-файлі: назва, текст, декілька фото
+    // Фото декілька, адже зробив автоматичний слайдер
+    const ArticleAboutUs=({section})=>{
+        const[currentImg, nextImg]=useState(0);
+        const [fade, setFade] = useState(true);
+        useEffect(() => {
+            
+            const interval = setInterval(() => {
+                setFade(false);
+                setTimeout(()=>{
+                nextImg((prevIndex) => (prevIndex+1) % section.image.length);
+                setFade(true);
+                },700);
+            }, 5000);
+            return () => clearInterval(interval);
+        }, [section.image.length]);
+        return(
+            <article className="about_us_article flex">
+                    <div className="about_us_content flex flex_column justify_content_center">
+                        <h3 className="about_us_h3">{section.title}</h3>
+                        <p className="about_us_p">{section.text}</p>
+                </div>
+            <img className={`about_us_img ${fade ? "about_us_img_fade_true" : "about_us_img_fade_false"}`} src={section.image[currentImg]} alt={section.title} />
+                </article>
+
+        );
+    };
+    
     return (
+        
         <main>
             <div id="main"></div>
             <section className="first_screen_section align_items_center flex">
@@ -31,13 +60,7 @@ export function Main() {
                 </article>
 
                 {aboutUsSection.map((section, index) => (
-                <article className="about_us_article flex" key={index}>
-                    <div className="about_us_content flex flex_column justify_content_center">
-                        <h3 className="about_us_h3">{section.title}</h3>
-                        <p className="about_us_p">{section.text}</p>
-                </div>
-            <img className="about_us_img" src={section.image} alt={section.title} />
-                </article>
+                <ArticleAboutUs key={index} section={section} />
             ))}
 
                 <a className="button blue" href="#contacts">Дізнатися більше</a>
