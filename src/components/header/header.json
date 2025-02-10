@@ -1,12 +1,5 @@
-[
-    {
-        "array": ["img/main_icon.svg"]
-      },
-    {
-      "array": ["Контакти", "Головна", "З чим ми працюємо", "Підтримати фонд"]
-    },
-    
-    {
-      "array": ["#contacts", "#main", "#about_us", "#help_us"]
-    }
-  ]
+{
+  "logo": "img/main_icon.svg",
+  "section_titles": ["Контакти", "Головна", "З чим ми працюємо", "Підтримати фонд"],
+  "points": ["#contacts", "#main", "#about_us", "#help_us"]
+}

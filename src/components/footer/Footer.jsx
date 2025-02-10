@@ -1,15 +1,7 @@
 import './footer.css'
 import footer from "./footer.json";
-function parseFooter(i){
-    return footer[i].array;
-}
+
 export function Footer() {
-    // Іконки соц-мереж з відповідними URL та описом alt зберіг у JSON-файлі
-    let icon, link, name;
-    icon = parseFooter(0);
-    link = parseFooter(1);
-    name = parseFooter(2);
-    
     // Оскільки серверу немає, а форма для заповнення є, 
     // то просто виводжу повідомлення
     const Submit = (event) => {
@@ -34,9 +26,9 @@ export function Footer() {
                     <span className="bold">0-987-654-321</span>
                 </p>
                 <div className="contact_icons_in_row_div contact_size flex">
-                {icon.map((text, index) => (
-                    <a className="contact_a" href={link[index]} key={index}>
-                    <img className="contact_icon" src={text} alt={name[index]}/>
+                {footer.map((social, index) => (
+                    <a className="contact_a" href={social.url} key={index}>
+                    <img className="contact_icon" src={social.icon} alt={social.name}/>
                     </a>
                 ))} 
                 </div>

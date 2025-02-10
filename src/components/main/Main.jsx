@@ -16,7 +16,7 @@ export function Main() {
                 nextImg((prevIndex) => (prevIndex+1) % section.image.length);
                 setFade(true);
                 },700);
-            }, 5000);
+            }, 4500);
             return () => clearInterval(interval);
         }, [section.image.length]);
         return(

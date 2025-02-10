@@ -1,16 +1,21 @@
 [
-    {
-      "array": ["/img/TelegramLogo.svg", "/img/WhatsappLogo.svg"]
-    },
-    
-    {
-      "array": ["https://web.telegram.org/",
-       "https://www.whatsapp.com/?lang=uk_UA"]
-    },
+  {
+      "name": "Telegram",
+      "icon": "/img/TelegramLogo.svg",
+      "url": "https://web.telegram.org/"
+  },
+  {
+      "name": "WhatsApp",
+      "icon": "/img/WhatsappLogo.svg",
+      "url": "https://www.whatsapp.com/?lang=uk_UA"
+  },
+  {
+    "name": "Facebook",
+    "icon": "/img/icons8-facebook.svg",
+    "url": "https://www.facebook.com/?locale=uk_UA"
+}
+]
 
-    {
-      "array": ["Telegram", "WhatsApp"]
-    }
-  ]
+
 
   

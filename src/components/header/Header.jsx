@@ -1,15 +1,13 @@
 import header from "./header.json";
 import './header.css'
 import { useEffect } from 'react';
-function parseHeader(i){
-    return header[i].array;
-}
+
 export function Header() {
     // Меню зберіг у JSON-файлі: лого, назва секції, відповне Id для переходу
     let logo, section_title, points;
-    logo = parseHeader(0);
-    section_title = parseHeader(1);
-    points = parseHeader(2);
+    logo = header.logo;
+    section_title = header.section_titles;
+    points = header.points;
     // Для бургер-меню
     useEffect(() => {
         let menuToggle = document.getElementById('menu_toggle');
